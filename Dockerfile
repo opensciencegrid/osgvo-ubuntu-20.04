@@ -1,5 +1,11 @@
 FROM ubuntu:20.04
 
+LABEL opensciencegrid.name="Ubuntu 20.04"
+LABEL opensciencegrid.description="Ubuntu 20.04 (Focal) base image"
+LABEL opensciencegrid.url="https://www.ubuntu.com"
+LABEL opensciencegrid.category="Base"
+LABEL opensciencegrid.definition_url="https://github.com/opensciencegrid/osgvo-ubuntu-20.04"
+
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt update && apt install -y --no-install-recommends \
         build-essential \

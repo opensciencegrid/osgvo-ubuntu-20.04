@@ -1,0 +1,7 @@
+{
+    "opensciencegrid.name": "Ubuntu 20.04",
+    "opensciencegrid.description": "Ubuntu 20.04 (Focal) base image",
+    "opensciencegrid.url": "https://www.ubuntu.com",
+    "opensciencegrid.category": "Base",
+    "opensciencegrid.definition_url": "https://github.com/opensciencegrid/osgvo-ubuntu-20.04"
+}
