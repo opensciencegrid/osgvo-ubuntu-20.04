@@ -79,6 +79,11 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
+# stashcp
+RUN wget -nv https://github.com/opensciencegrid/stashcp/releases/download/6.4.0/stashcp-6.4.0-1_amd64.deb && \ 
+    apt install ./stashcp-*_amd64.deb && \
+    rm -f stashcp-*_amd64.deb
+
 # CA certs
 RUN mkdir -p /etc/grid-security && \
     cd /etc/grid-security && \
