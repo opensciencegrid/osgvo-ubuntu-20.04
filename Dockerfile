@@ -66,6 +66,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
         python3-tk \
         python3-dev \
         python3-numpy \
+        python3-scipy \
         r-base \
         r-cran-rcpp \
         r-cran-rinside \
