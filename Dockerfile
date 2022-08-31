@@ -81,7 +81,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     rm -rf /var/lib/apt/lists/*
 
 # stashcp
-RUN wget -nv https://github.com/opensciencegrid/stashcp/releases/download/v6.7.5/stashcp-6.7.5-1_amd64.deb &&
+RUN wget -nv https://github.com/opensciencegrid/stashcp/releases/download/v6.8.1/stashcp-6.8.1-1_amd64.deb && \
     apt install ./stashcp-*_amd64.deb && \
     rm -f stashcp-*_amd64.deb
 
@@ -97,7 +97,6 @@ RUN for MNTPOINT in \
         /cvmfs \
         /hadoop \
         /hdfs \
-        /lizard \
         /mnt/hadoop \
         /mnt/hdfs \
         /xenon \
